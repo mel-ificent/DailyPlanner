@@ -11,15 +11,18 @@ function timePast(){
     var plannerRow = $("#row-"+i);
     var rowHour = 9 + i;
     var currentHour = moment().format("H");
-    
-    console.log(rowHour);
-    console.log(currentHour);
 
 
-    if(rowHour<currentHour){
-        plannerRow.addClass("table-secondary");
+        if(rowHour<currentHour){
+            plannerRow.addClass("past");
 
-    }
+        }
+        else if (rowHour == currentHour){
+        plannerRow.addClass("present");
+         }
+        else {
+            plannerRow.addClass("future");
+        }
     }
 }
 
