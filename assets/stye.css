@@ -70,3 +70,8 @@ body {
     transition: all 0.3s ease-in-out;
   }
   
+  th{
+      border-right: 1px solid black;
+      text-align:right;
+      width:100px;
+  }
