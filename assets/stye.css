@@ -40,7 +40,6 @@ body {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
-    border-right: 1px solid black;
     text-align:right;
     width:100px;
     height: 80px;
@@ -83,4 +82,9 @@ body {
     height:80px;
     width:100px;
 
+}
+
+.custom-form{
+    width:100%;
+    border:none;
 }
