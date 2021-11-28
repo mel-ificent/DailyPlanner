@@ -34,7 +34,6 @@ function getPlannerItems(){
     for (i=0;i<9;i++){
         var item = "text" + i;
         var itemLS = JSON.parse(localStorage.getItem(item));
-        var plannerRow = $("#row-"+i);
         if(itemLS !== null){
             $("#"+item).val(itemLS);
 
@@ -46,6 +45,7 @@ function getPlannerItems(){
 //Save planner Items
 function savePlannerItem(){
 
+    //identifies for which row the button was clicked for
     var btnID = $(this).attr('id');
     var id = btnID.charAt(3);
     var textID = "text"+id;
